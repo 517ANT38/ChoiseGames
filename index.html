@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body >
+    <div id="rocketFlight1">
+        <img src="images/raketa.png" alt="" srcset="">
+    </div>
+    <div id="rocketFlight2">
+        <img src="images/raketa.png" alt="" srcset="">
+    </div>
+    <div class="preloader">
+        <div id="bar">
+            <div id="progress">
+
+            </div>
+        </div>
+    </div>
+     <ul class="logo-and-menu ">
+        <li><img src="images/Rectangle15.png" alt="Глобус" ></li> 
+        <li >
+            <a href="#maini" class="menu textik searI textChg"> Главная </a>   
+        </li>
+        <li >
+            <a href="#polyler" class="menu textik searI textChg">Популярное</a>
+        </li>
+        <li  class="">
+            <a href="#news" class="menu textik searI textChg">Новое</a>
+        </li>
+        <li>
+            <a href="#selectionGames" class="menu textik searI textChg">Подбор игр</a>
+        </li>
+    </ul>
+    <nav id="nav-themes">
+        <div class="cont_cross"><img id="cross1" src="images/2849810_cross_multimedia_error_delite_icon.png" class="cross"></div>
+        <h2 class="izm">Выбирите свою тему</h2>
+        <div class="box-themen">
+            <div id="but0"><img src="images/Group 7.png" alt="" srcset="" class="themen"></div>
+            <div class="but"><img src="images/Group 8.png" alt="" srcset="" class="themen"></div>
+            <div class="but"><img src="images/Group 9.png" alt="" srcset="" class="themen"></div>
+            <div class="but"><img src="images/Group 10.png" alt="" srcset="" class="themen"></div>
+            
+        </div>
+        
+        
+        
+        <form action="" method="post" class="form1">
+            <div>
+                <fieldset class="rest">
+                    <label for="textCl">Изменение цвета текста на страницы</label>
+                    <input type="color" name="textCl" id="textClE">
+                    <label for="resseti">Вернуться к цветам по умолчанию</label>
+                    <input type="reset" value="Очитска" name="resseti" id="ressetin">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Изменение меню и подвала</legend>
+                    
+                    
+                    <label for="logoMenu">Настроить цвет меню</label>
+                    <input type="color" name="logoMenu" id="Imenu">
+                    <label for="footer">Настроить цвет подвала</label>
+                    <input type="color" name="footer" id="fot" >
+                    <!-- <input type="button" value="Настроить подвал и меню"> -->
+                    <label for="logoG">Настройка цвета логотипа</label>
+                    <span class="mini">(Доступно 4 цвета глобуса)</span>
+                    <select name="logoG" id="standardLg" >
+                        <option value="images/Rectangle15.png">Выберите что-нибудь</option>
+                        <option value="images/Rectangle15.png">Темно-синий</option> 
+                        <option value="images/Rectangle16.png">Светло-Зеленый</option>
+                        <option value="images/Rectangle13.png">Темно-сиренивый</option> 
+                        <option value="images/Rectangle14.png">Светло-сиренивый</option>                     
+                    </select>
+                    <label for="Mylog">Установить свой логотип</label>
+                    <input type="file" name="Mylog" id="logotip"accept="image/png,image/gif" enctype="multipart/form-data">
+                    
+                    
+                    <input type="button" value="Настроить логотип" id="chgLg">
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class="fle">
+                    <legend>Изменение блоков контента</legend> 
+                    <p>               
+                        <label for="one">блок 1</label> 
+                        <input type="checkbox" name="one " id="" value="0" class="check">
+                        <label for="two"> блок 2</label> 
+                        <input type="checkbox" name="two" id="" value="1" class="check">
+                        <label for="three"> блок 3</label>
+                        <input type="checkbox" name="three" id="" value="2" class="check"> 
+                        <label for="four"> блок 4</label>       
+                        <input type="checkbox" name="four" id="" value="3" class="check">
+                    </p>
+                    
+                    <label for="blockGr">Настроить цвет фона блоков контента</label>              
+                    <input type="color" name="blockGr" id="blockCl">
+                    <label for="imgiB ">Настроить фоновый рисунок блоков контента</label>
+                    <input type="file" name="imgiB" id="imgiBlockF" accept="image/jpeg,image/png,image/gif" enctype="multipart/form-data">
+                    <input type="button" id="imgiBlock" value="Настроить фон-картинку блоков">
+                    <label for="miniblockG">Настроить цвет фона блоков с играми </label>
+                    <input type="color" name="miniblockG" id="BlockGames">
+                </fieldset>
+                <fieldset>
+                    <legend>Изменение главного фона</legend>  
+                    <label for="bodyGr">Настроить цвет фона</label>              
+                    <input type="color" name="bodyGr" id="mainFon">
+                    <label for="img ">Настроить фоновый рисунок</label>
+                    <input type="file" name="img" id="bodyFileImg" accept="image/jpeg,image/png,image/gif" enctype="multipart/form-data">
+                    <input type="button" value="Установить фон-картинку" id="bodyImg">
+                </fieldset>
+            </div>
+            
+        </form>
+        <!-- <h3>Установите интересный фон</h3> -->
+        <div class="box-themenT"> 
+            <h3 class="izm izmmi">Установите интересный фон:</h3>               
+            <div class="b-themenT"><img src="images/m2.png" alt="" srcset="" class="themenT" ></div>
+            <div class="b-themenT"> <img src="images/m3.png" alt="" srcset="" class="themenT"></div>
+            <div class="b-themenT"><img src="images/m4.png" alt="" srcset="" class="themenT" ></div>
+            <div class="b-themenT"><img src="images/m5.png" alt="" srcset="" class="themenT"></div>
+        </div>
+    </nav>
+    <main class="common" id="maini">
+        <h1 class="izm main-h1 searI textChg" >
+            Вас приветсвует сервис “Планета-шар ” по подбору компьютерных игр
+        </h1>
+        <p class="main-p izm searI textChg" >
+            В нашем сервисе вы сможете найти новинки киберспорта, популярные игры,
+            и подобрать игру по своему вкусу.
+        </p>
+        <p id="Subject1">
+            Вы также можете поменять тему сайта в зависимости от вашего вкуса.
+        </p>
+    </main>
+    
+    <div class="common com_N" id="polyler"> 
+        <h2 class="izm Efree textChg">Популярное</h2>
+        <div class="box_com">
+            <div class="A_com" id="games0">
+                <div>
+                    <img src="images/m91.png" alt="" class="imgGames">
+                </div>
+                <h2 class="izm A_text textChg">
+                    Hay Day
+                </h2>
+                <div class="textGames">
+                    <p class="A_text textChg">
+                        В самом начале игры игрок получает ферму и начинает ею управлять. Территория для построений в начале небольшая. Главная задача — выращивание растений и сельскохозяйственных культур. С помощью полученных ресурсов можно создавать продукты, покупать и кормить животных, выполнять задания и продавать продукты в киоске. С 17-го уровня доступна постройка порта, с помощью которого появится возможность переправлять товары не только по суше, но и по морю.
+                    </p>
+                   
+                    <h3 class="A_text textChg">
+                        Валюта в игре
+                    </h3>
+                    <p class="A_text textChg">
+                        В игре Hay Day существует 4 вида валюты: золотые монеты, алмазы, ваучеры, подарочные карты, и карточки фарм пасс
+                    </p>
+                    
+                    <h3 class="A_text textChg">Город</h3>
+                    <p class="A_text textChg">
+                        Игроки могут объединяться в соседства с 10 уровня, благодаря чему могут обмениваться нужными продуктами (через Запросы соседства)
+                        Город открывается с 34-го уровня. В отличие от фермы, город имеет уровень репутации в виде сердечек, которые даются жителями за выполнение их заказов в городе. В городе есть главное здание — Ратуша, станция остановки поезда и личный поезд. Для города доступны здания различного предназначения (Закусочная, Кинотеатр, Гостиница и др.) Количество посетителей в городе зависит от уровня Ратуши.
+                    </p>                    
+                </div>
+                <div class="buttons_a"><span  class="but_a DescriptionA A_text textChg">Описание</span><a  class="but_a A_text textChg">Установить</a></div>
+            </div>
+            <div class="A_com" id="games6">
+                
+                <div><img src="images/m90.png" alt="" srcset="" class="imgGames"></div>
+                <h2 class="izm h2_com A_text textChg">Empire Four Kingdoms</h2>
+                <div class="textGames A_text textChg">
+                    <p class="A_text textChg">
+                        Попробуй стать властелином четырех королевств в этой популярной средневековой MMO-стратегии! Продемонстрируй свое мастерство в игре, сочетающей тактические бои PvP, стратегическое развитие империи и управление ресурсами! Собирай, добывай и выменивай ресурсы для улучшения своего замка, чтобы превратить его в неприступную твердыню! Собирай мощную армию, захватывай новые земли и защищай их от врагов! Заключай союзы с друзьями, чтобы громить врагов, и участвуй в грандиозных сражениях с миллионами других игроков на огромной интерактивной карте мира!
+                        
+                    </p>
+                    <h3 class="A_text textChg">Особеннонсти игры:</h3>
+                    <ul class="A_text textChg">
+                        <li>
+                             Стройте и улучшайте собственный средневековый замок 
+                        </li>
+                        <li>
+                             Создавайте могущественные альянсы и громите врагов в масштабных боях PvP 
+                        </li>
+                        <li>
+                            Стройте планы сражений с участием более 50 различных юнитов и впечатляющего арсенала орудий
+                        </li>
+                    </ul>
+                    <p class="A_text textChg">
+                        Эта  стратегия позволит вам вернуться во средневековые времена.
+                    </p>
+                </div> 
+                <div class="buttons_a"><span  class="but_a DescriptionA A_text textChg">Описание</span><a  class="but_a A_text textChg" >Установить</a></div>
+  
+            </div>
+            
+            <div class=" A_com " id="games3">
+                <div><img src="images/m92.png" alt="" srcset="" class="imgGames"></div>
+                <h2 class="izm A_text textChg">Clash Royale</h2>
+                <div class="textGames">
+                
+                    <p class="A_text textChg">
+                        Геймплей строится на битвах, в которых вам нужно уничтожать вражеские башни с помощью уникальных карт, а также оборонять свои башни от врага. У каждого игрока по 3 башни: две башни принцесс и одна башня короля. Уничтожение одной из башен соперника приводит к победе, если башни игрока не были уничтожены. Уничтожение башни короля соперника приводит к победе. У принцесс больше дальнобойность и быстрее скорость атаки, но меньше здоровья, чем у короля. Изначально башня Короля находится в неактивном состоянии. Чтобы активировать её, враг должен повредить или уничтожить одну из башен принцесс. За победу, игрок получает трофеи (или нет, в зависимости от режима), сундук, монеты и короны, благодаря которым он может продвигаться по Pass Royale и получать дополнительные награды
+                    </p>
+                    <h3 class="A_text textChg">
+                        Клан и клановые войны
+                    </h3>
+                    <p class="A_text textChg">                        
+                        Клан — это место сбора любых игроков в сообщества. Попав в клан, игрок может общаться с другими игроками, жертвовать и просить карты, а также торговать ими, участвовать в «клановых войнах», за которых также полагается награда.
+
+                        Каждый клан обладает боевым кораблём.
+                    </p>
+                    <h3 class="A_text textChg">
+                        Карты     
+                    </h3>
+                    <p class="A_text textChg">
+                        Карты разделены на пять классов по редкости: обычные, редкие, эпические, легендарные и Чемпионы.
+
+                        Всего в игре 107 карт: 28 обычных карт, 28 редких, 29 эпических, 18 легендарных и 4 карты Чемпионов.
+                        Карты делятся на войска, строения.
+                    </p>
+                    
+                </div>
+                <div class="buttons_a"><span  class="but_a DescriptionA A_text textChg">Описание</span><a  class="but_a A_text textChg">Установить</a></div>
+            </div>
+            <div class="A_com B_ST" id="games7">
+                <div> <img src="images/m7.png" alt="" srcset="" class="imgGames"></div>
+                <h3 class="izm sdvig A_text textChg">
+                    Косынка
+                </h3>
+                <div class="textGames">
+                    <h3 class="A_text textChg">
+                        Правила
+                    </h3>
+                    <p class="A_text textChg">
+                        Играется одной колодой в 52 карты. Цель игры — разложить карты по мастям в порядке от туза до короля в четыре стопки (их иногда называют базовыми, или «домами»). Карту можно перекладывать на другую рангом выше, но другого цвета (чёрного или красного). В каждую из четырёх базовых стопок (домов), по которым необходимо разложить все карты, сначала кладутся тузы, затем двойки, тройки и так далее до короля. Карты можно сдавать из оставшейся от раздачи колоды (в левом верхнем углу) либо по одной, либо по три штуки, в зависимости от модификации. В свободную ячейку (не дом) можно положить только короля. Игра заканчивается, когда все карты разложены. Цель игры состоит в том, чтобы разложить все карты в четыре стопки по возрастанию, начиная с туза, так, чтобы карты одной масти находились в одной стопке.
+                    </p>
+                    <p class="A_text textChg">
+                        Все карты в столбцах закрыты, и только самые верхние карты в каждом столбце кладут открытыми.Важно отметить, что открытость карт не является гарантией успешного исхода сборки пасьянса.
+                        из 52-карточной колоды первоначально раскладывают 28 карт в семь столбцов.
+                    </p>
+                </div>
+                <div class="buttons_a"><span  class="but_a DescriptionA A_text textChg">Описание</span><a  class="but_a A_text textChg">Установить</a></div>
+
+            </div>
+            <div class="A_com " id="games5">
+                <div> <img src="images/soper.png" alt="" srcset="" class="imgGames"></div>
+                <h3 class="izm sdvig A_text textChg">
+                    Сапер
+                </h3>
+                <div class="textGames">
+                    <p class="A_text textChg">
+                        Плоское или объёмное игровое поле разделено на смежные ячейки (квадраты, шестиугольники, кубы и т. п.), некоторые из которых «заминированы»; количество «заминированных» ячеек известно. Целью игры является открытие всех ячеек, не содержащих мины.
+                    </p>
+                    <h3 class="A_text textChg">
+                        Оценка сложности поля
+                    </h3>
+                    <p class="A_text textChg">
+                       
+                        Часто сложность поля оценивают с помощью величины 3BV (Bechtels Board Benchmark Value). Эта величина численно равна минимальному количеству непосредственных открытий ячеек (в стандартном варианте «Сапёра» открытия ячеек только левой кнопкой мыши, без использования флагов и двойных кликов), необходимому для открытия всего поля. Эта величина отображает лишь количество определённых действий в идеальном случае при определённой манере игры, а вовсе не трудность расстановки для конкретного игрока.
+                    </p>
+                    <p class="A_text textChg">
+                        Результат сильно зависит от расположения мин. Теоретически при любых игровых параметрах есть вероятность прохождения одним щелчком. Но практическая реализация генератора случайных комбинаций не позволяет получить слишком простую расстановку на больших досках.
+                    </p>
+                </div>
+                <div class="buttons_a "><span  class="but_a DescriptionA A_text textChg">Описание</span><a  class="but_a A_text textChg">Установить</a></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="common com_N" id="news"> 
+        <h2 class="izm B_text B_comB textChg">Новое</h2>
+        <div class="box_com">
+            <div class="B_com">
+                <div>
+                    <img src="images/m91.png" alt="" class="imgGames">
+                </div>
+                <h2 class="izm B_text textChg">
+                    Hay Day
+                </h2>
+                <div class="textGames">
+                    <p class="B_text textChg">
+                        В самом начале игры игрок получает ферму и начинает ею управлять. Территория для построений в начале небольшая. Главная задача — выращивание растений и сельскохозяйственных культур. С помощью полученных ресурсов можно создавать продукты, покупать и кормить животных, выполнять задания и продавать продукты в киоске. С 17-го уровня доступна постройка порта, с помощью которого появится возможность переправлять товары не только по суше, но и по морю.
+                    </p>
+                   
+                    <h3 class="B_text textChg">
+                        Валюта в игре
+                    </h3>
+                    <p class="B_text textChg">
+                        В игре Hay Day существует 4 вида валюты: золотые монеты, алмазы, ваучеры, подарочные карты, и карточки фарм пасс
+                    </p>
+                    
+                    <h3 class="B_text textChg">Город</h3>
+                    <p class="B_text textChg">
+                        Игроки могут объединяться в соседства с 10 уровня, благодаря чему могут обмениваться нужными продуктами (через Запросы соседства)
+                        Город открывается с 34-го уровня. В отличие от фермы, город имеет уровень репутации в виде сердечек, которые даются жителями за выполнение их заказов в городе. В городе есть главное здание — Ратуша, станция остановки поезда и личный поезд. Для города доступны здания различного предназначения (Закусочная, Кинотеатр, Гостиница и др.) Количество посетителей в городе зависит от уровня Ратуши.
+                    </p>                    
+                </div>
+                <div class="buttons_b"><span  class="DescriptionB B_text but_b textChg">Описание</span><a  class="but_a B_text but_b textChg">Установить</a></div>
+            </div>
+            <div class="B_com" id="games2">
+                
+                <div><img src="images/m1.png" alt="" srcset="" class="imgGames"></div>
+                <h2 class="izm h2_com B_text textChg">Mario</h2>
+                <div class="textGames B_text">
+                    <p class="B_text textChg">
+                        Главными героями игры являются водопроводчик Марио и его брат Луиджи (в качестве игрового персонажа для второго игрока). Цель игры — пройти через Грибное королевство, ускользая или уничтожая солдат черепашьего Короля Купы (также известного как Боузер), чтобы спасти захваченную им в плен Принцессу.
+                    </p>
+                    
+                    <p class="B_text textChg">
+                        Марио (или Луиджи) атакует противников, прыгая на них сверху (такой способ убивает грибов Гумба и временно нейтрализует черепах Купа, заставляя их прятаться в свои панцири) или ударяя снизу по платформе, на которой находится противник. «Испугавшихся» черепах можно использовать как оружие против других врагов, подтолкнув панцирь впереди себя: разогнавшись, он сметает всех на своём пути, но когда встречает преграду, меняет направление и может ударить самого Марио. На некоторых врагов, например дикобразов Спайни, нельзя запрыгивать, так как это ранит Марио. Их можно убить, выстрелив огненными шарами, пнув в них черепаху или ударом по платформе снизу. То же самое касается хищных растений, регулярно показывающихся из торчащих в земле труб. Некоторые из этих труб являются проходом в бонусный уровень, подземелье, в котором можно найти небольшое количество монет, а заодно сократить путь до выхода с уровня. Также встречаются ростки, по которым Марио поднимается на облака, бонусный уровень, на котором большое количество монет и нет противников.
+
+                    </p>
+                    <p class="B_text textChg">
+                        По пути Марио собирает монеты и бонусы, ударяя по блокам со знаком вопроса, а также выискивая секретные хранилища монет в кирпичных стенах. При наборе ста монет Марио получает дополнительную «жизнь», изначально у Марио есть три «жизни». За поверженных врагов начисляются очки, которые не приносят какой-либо практической пользы, а служат лишь для отражения мастерства игрока. При наборе 1 миллиона очков шестизначное табло увеличивается до семизначного. При последовательном поражении врагов одним черепашьим панцирем очки начисляются по возрастающей за каждого убитого: от 500 до 8000 очков, а затем (при поражении восьмого персонажа) Марио начисляется дополнительная «жизнь»
+                    </p>
+                    <p class="B_text textChg">
+                        Среди бонусов может встретиться оранжевый гриб, взяв который, персонаж увеличивается в размерах, превращаясь в Супер Марио (англ. Super Mario), и может разбивать головой кирпичи. 
+                    </p>
+                </div> 
+                <div class="buttons_b"><span  class=" DescriptionB B_text but_b textChg">Описание</span><a  class="but_a B_text but_b textChg" >Установить</a></div>
+  
+            </div>
+            
+            <div class=" B_com " id="games3">
+                <div><img src="images/m92.png" alt="" srcset="" class="imgGames"></div>
+                <h2 class="izm B_text textChg">Clash Royale</h2>
+                <div class="textGames">
+                
+                    <p class="B_text textChg">
+                        Геймплей строится на битвах, в которых вам нужно уничтожать вражеские башни с помощью уникальных карт, а также оборонять свои башни от врага. У каждого игрока по 3 башни: две башни принцесс и одна башня короля. Уничтожение одной из башен соперника приводит к победе, если башни игрока не были уничтожены. Уничтожение башни короля соперника приводит к победе. У принцесс больше дальнобойность и быстрее скорость атаки, но меньше здоровья, чем у короля. Изначально башня Короля находится в неактивном состоянии. Чтобы активировать её, враг должен повредить или уничтожить одну из башен принцесс. За победу, игрок получает трофеи (или нет, в зависимости от режима), сундук, монеты и короны, благодаря которым он может продвигаться по Pass Royale и получать дополнительные награды
+                    </p>
+                    <h3 class="B_text textChg">
+                        Клан и клановые войны
+                    </h3>
+                    <p class="B_text textChg">                        
+                        Клан — это место сбора любых игроков в сообщества. Попав в клан, игрок может общаться с другими игроками, жертвовать и просить карты, а также торговать ими, участвовать в «клановых войнах», за которых также полагается награда.
+
+                        Каждый клан обладает боевым кораблём.
+                    </p>
+                    <h3 class="B_text textChg">
+                        Карты     
+                    </h3>
+                    <p class="B_text textChg">
+                        Карты разделены на пять классов по редкости: обычные, редкие, эпические, легендарные и Чемпионы.
+
+                        Всего в игре 107 карт: 28 обычных карт, 28 редких, 29 эпических, 18 легендарных и 4 карты Чемпионов.
+                        Карты делятся на войска, строения.
+                    </p>
+                    
+                </div>
+                <div class="buttons_b"><span  class=" DescriptionB B_text but_b textChg">Описание</span><a  class="but_a B_text but_b textChg">Установить</a></div>
+            </div>
+            <div class="B_com B_ST" id="games1">
+                <div> <img src="images/m6.png" alt="" srcset="" class="imgGames"></div>
+                <h3 class="izm sdvig B_text textChg">
+                    Шахматы
+                </h3>
+                <div class="textGames">
+                    <p class="B_text textChg">
+                        Ша́хматы (перс. شاه مات ‘шах мат’, буквальный перевод «шах умер») — настольная логическая игра с шахматными фигурами на 64-клеточной доске, сочетающая в себе элементы искусства (в том числе в части шахматной композиции), науки и спорта.
+
+                        В шахматы обычно играют два игрока (именуемые шахматистами) друг против друга. Также возможна игра одной группы шахматистов против другой или против одного игрока, такие партии зачастую именуются консультационными. Кроме того, существует практика сеансов одновременной игры, когда против одного сильного игрока играет несколько противников, каждый на отдельной доске.
+
+                        Правила игры в основном сложились к XV веку; в современных официальных турнирах применяются правила Международной шахматной федерации, которыми регламентируются не только передвижение фигур, но и права судьи, правила поведения игроков и контроль времени
+                    </p>
+                    <h3 class="B_text textChg">
+                        Доска и начальная позиция
+                    </h3>
+                    <p class="B_text textChg">
+                        Игра происходит на доске, поделённой на равные квадратные клетки, или поля. Размер доски — 8×8 клеток. Вертикальные ряды полей (вертикали) обозначаются латинскими буквами от а до h слева направо, горизонтальные ряды (горизонтали) — цифрами от 1 до 8 снизу вверх; каждое поле обозначается сочетанием соответствующих буквы и цифры. Поля раскрашены в тёмный и светлый цвета (и называются, соответственно, чёрными и белыми) так, что соседние по вертикали и горизонтали поля раскрашены в разные цвета. Доска располагается так, чтобы ближнее угловое поле справа от игрока было белым (для белых это поле h1, для чёрных — поле а8).
+                    </p>
+                    <p class="B_text textChg">
+                        У игроков в начале игры имеется по одинаковому набору фигур. Фигуры одного из игроков условно называются «белыми», другого — «чёрными». Белые фигуры окрашены в светлый цвет, чёрные — в тёмный. Сами игроки называются «белые» и «чёрные» по цвету своих фигур.
+                    </p>
+                    <p class="B_text textChg">
+                        В каждый комплект фигур входят: король (♔, ♚), ферзь (♕, ♛), две ладьи (♖, ♜), два слона (♗, ♝), два коня (♘, ♞) и восемь пешек (♙, ♟). В начальной позиции фигуры обеих сторон размещаются так, как показано на диаграмме. Белые занимают первую и вторую горизонтали, чёрные — седьмую и восьмую. Пешки расположены на второй и седьмой горизонталях соответственно.
+                        Дизайн шахматных фигур разнообразен. Стандартном де-факто стал так называемый стаунтоновский комплект.
+
+                    </p>
+                   
+                </div>
+                <div class="buttons_b sd"><span  class=" DescriptionB B_text but_b textChg">Описание</span><a  class="but_a B_text but_b textChg">Установить</a></div>
+
+            </div>
+            <div class="B_com " id="games4">
+                <div> <img src="images/m131388.png" alt="" srcset="" class="imgGames"></div>
+                <h3 class="izm sdvig B_text textChg">
+                    Sonic the Hedgehog 2 
+                </h3>
+                <div class="textGames">
+                    <p class="B_text textChg">
+                        По сюжету игры, злодей доктор Роботник прибывает на Западный Остров с целью заполучить мистические камни — Изумруды Хаоса, чтобы питать их энергией свою космическую станцию под названием «Яйцо Смерти» (англ. Death Egg) для захвата мира. Соник знакомится с лисёнком Майлзом Прауэром по кличке Тейлз, и они становятся лучшими друзьями. Главные герои собираются нарушить коварные планы Роботника по захвату мира.                    </p>
+                 
+                    <p class="B_text textChg">
+                        Игроку предстоит пройти одиннадцать игровых зон («Emerald Hill», «Chemical Plant», «Aquatic Ruin», «Casino Night», «Hill Top», «Mystic Cave», «Oil Ocean», «Metropolis», «Sky Chase», «Wing Fortress» и «Death Egg»), которые, в свою очередь, поделены на два акта и заполнены определёнными врагами-роботами, называемых бадниками (англ. badnik). Персонаж игрока может атаковать врагов путём сворачивания в колючий клубок в прыжке, либо с помощью нового приёма spin dash, разгоняясь на месте и атакуя скоростным ударом в перекате. Во время прохождения уровня игрок собирает золотые кольца, служащие защитой от врагов, а при сборе 100 штук дающие дополнительную жизнь. 
+                        Если герою был нанесён урон, он теряет все свои собранные кольца, без которых персонаж гибнет .
+                    </p>
+                    
+                </div>
+                <div class="buttons_b sd2"><span  class=" DescriptionB B_text but_b textChg">Описание</span><a  class="but_a B_text but_b textChg">Установить</a></div>
+
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="common com_N" id="selectionGames"> 
+        <h2 class="izm  Efree textChg">Подбор игр</h2>
+        <form method="POST" action="" class="selectionG">
+            <fieldset>
+                <legend class="Efree textChg">Подбор</legend>
+                <label for="names" class="Efree textChg" >Имя игры</label>
+                <input type="text" name="names" id="nam"  pattern="[A-Za-zА-Яа-яЁё]{2,15}[2-9]{0,}">
+                <label for="selectGamGenre" class="Efree textChg">Жанр игры</label>
+                
+                <select id="place" name="selectGamGenre">
+                    <option value="null">Выбирайте</option>
+                    <option value="Стратегия">Стратегия</option>
+                    <option value="Платформер">Платформер</option>
+                    <option value="аркады">Аркады</option>
+                    <option value="Пасьянс">Пасьянс</option> 
+                    <option value="Головоломка">Головоломка</option>  
+                </select>
+                <label for="selectGamType" class="Efree textChg">Тип игры</label>
+                <input list="place1" >
+                <datalist name="selectGamType" id="place1" >
+                    <option value="Настольные">Настольные интеллектуальные игры в компьютерном варианте</option>
+                    <option value="Управленческие">Управленческо-экономические</option>
+                    <option value="Авантюрные">Авантюрные игры</option>
+                    <option value="Конвейерные">Конвейерные игры</option> 
+                </datalist>
+                <label for="AgeСategory" class="Efree textChg">Возрастная категория</label>
+                <select name="AgeСategory" id="place2">
+                    <option value="null">&#9884;</option>
+                    <option value="0+">0+</option>
+                    <option value="6+">6+</option>
+                    <option value="12+">12+</option>
+                    <option value="16+">16+</option> 
+                    <option value="18+">18+</option>
+                </select>
+                <label for="count_user" class="Efree textChg">Количество пользователей</label>
+                <p>
+                    <span  class="Efree textChg minik">Многопользовательские</span>
+                    <input type="radio" name="count_user" value="Много" class="co_use">
+                    <span  class="Efree textChg minik">Однопользовательские</span>
+                    <input type="radio" name="count_user" value="одно" class="co_use">
+                </p>
+                <label for="off_on" class="Efree textChg">Формат игры</label>                
+                <p>
+                    <span  class="Efree textChg ">Онлайн</span>
+                    <input type="radio" name="off_on" value="Онл" class="off_on">
+                    <span  class="Efree textChg ">Оффлайн</span>
+                    <input type="radio" name="off_on" value="Офф" class="off_on">
+                </p>
+                <input type="button" value="Подобрать" id="selc">
+                <input type="reset" value="Очистить" id="clearSelc"> 
+            </fieldset>            
+        </form>
+        <div class="box_com" id="box_pole"></div>
+    </div> 
+    <div class="textik footer ">
+        <p class="izm searI textChg">
+            &#169;Тащилин А.А.
+        </p>
+    </div>
+    
+    <script src="script/scriptT.js"></script>
+    <script src="script/script2.js"></script>
+    <script src="script/scriptO.js"></script>
+</body>
+</html>
